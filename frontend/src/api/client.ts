@@ -57,6 +57,7 @@ export function useSimulateQuery(params: SimulateParams) {
     queryKey: ['simulate', params],
     queryFn: () => fetchJson<SimulateResponse>(url),
     enabled: Boolean(params.start && params.end),
+    staleTime: 300_000,
   });
 }
 
@@ -80,6 +81,7 @@ export function useCompareQuery(params: CompareParams) {
     queryKey: ['compare', params],
     queryFn: () => fetchJson<CompareResponse>(url),
     enabled: Boolean(params.start && params.end),
+    staleTime: 300_000,
   });
 }
 
@@ -101,6 +103,7 @@ export function useOutlookQuery(params: OutlookParams) {
     queryKey: ['outlook', params],
     queryFn: () => fetchJson<OutlookResponse>(url),
     enabled: Boolean(params.start),
+    staleTime: 300_000,
   });
 }
 
@@ -120,6 +123,7 @@ export function useFaultsQuery(params?: FaultsParams) {
   return useQuery<FaultsResponse, Error>({
     queryKey: ['faults', params],
     queryFn: () => fetchJson<FaultsResponse>(url),
+    staleTime: 300_000,
   });
 }
 

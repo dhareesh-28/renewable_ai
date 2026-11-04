@@ -41,6 +41,8 @@ def run_simulation(
     iso_model: Optional[Any] = None,
     config: Optional[SystemConfig] = None,
     initial_soc_kwh: Optional[float] = None,
+    precomputed_predictions: Optional[np.ndarray] = None,
+    precomputed_faults: Optional[pd.DataFrame] = None,
 ) -> tuple[pd.DataFrame, dict[str, Any]]:
     """Execute closed-loop simulation over the specified time horizon.
 
@@ -79,14 +81,20 @@ def run_simulation(
     export_price = config.tariff.export_price
 
     # 1. Solar Forecasting (Strictly using features only: no data leakage)
-    predicted_solar_kw = predict(forecast_model, df_horizon, config)
+    if precomputed_predictions is not None:
+        predicted_solar_kw = precomputed_predictions
+    else:
+        predicted_solar_kw = predict(forecast_model, df_horizon, config)
     load_kw = df_horizon["building_load_kw"].to_numpy().astype(float)
     actual_solar_kw = df_horizon["solar_kw_actual"].to_numpy().astype(float)
 
     # 2. Fault Detection (Compares predicted vs actual)
-    diagnosed_df = detect_faults(
-        df_horizon, forecast_model=forecast_model, iso_model=iso_model, config=config
-    )
+    if precomputed_faults is not None:
+        diagnosed_df = precomputed_faults
+    else:
+        diagnosed_df = detect_faults(
+            df_horizon, forecast_model=forecast_model, iso_model=iso_model, config=config
+        )
     is_fault_detected = diagnosed_df["final_fault"].to_numpy()
     fault_severities = diagnosed_df["severity"].to_list()
     fault_hours_detected = int(np.sum(is_fault_detected))
@@ -221,6 +229,18 @@ def run_all_strategies(
     if forecast_model is None:
         forecast_model = load_model(config=config)
 
+    if iso_model is None:
+        iso_path = config.models_dir / "isolation_forest.joblib"
+        if iso_path.exists():
+            import joblib
+            iso_model = joblib.load(iso_path)
+
+    # Precompute predictions and fault diagnosis once across the shared horizon
+    precomputed_preds = predict(forecast_model, df_horizon, config)
+    precomputed_flts = detect_faults(
+        df_horizon, forecast_model=forecast_model, iso_model=iso_model, config=config
+    )
+
     strategies = ["grid_only", "rule_based", "optimised_lp"]
     all_results: dict[str, tuple[pd.DataFrame, dict[str, Any]]] = {}
 
@@ -233,6 +253,8 @@ def run_all_strategies(
             iso_model=iso_model,
             config=config,
             initial_soc_kwh=initial_soc_kwh,
+            precomputed_predictions=precomputed_preds,
+            precomputed_faults=precomputed_flts,
         )
         all_results[strat] = (res_df, summary)
 

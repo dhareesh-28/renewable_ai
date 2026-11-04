@@ -346,11 +346,11 @@ def strategy_optimised_lp(
         # import - export - charge + discharge = load - solar
         A_eq = np.zeros((T, 4 * T))
         b_eq = load_kw - solar_kw
-        for t in range(T):
-            A_eq[t, t] = -1.0  # charge
-            A_eq[t, T + t] = 1.0  # discharge
-            A_eq[t, 2 * T + t] = 1.0  # import
-            A_eq[t, 3 * T + t] = -1.0  # export
+        diag = np.eye(T)
+        A_eq[:, :T] = -diag           # charge
+        A_eq[:, T : 2 * T] = diag      # discharge
+        A_eq[:, 2 * T : 3 * T] = diag  # import
+        A_eq[:, 3 * T :] = -diag       # export
 
         # 2. Inequality constraints (SoC Bounds & Terminal Condition):
         # soc[t] = s_0 + sum_{tau=0}^t (eta_c * charge[tau] - (1/eta_d) * discharge[tau])
@@ -360,24 +360,21 @@ def strategy_optimised_lp(
         A_ub = np.zeros((2 * T + 1, 4 * T))
         b_ub = np.zeros(2 * T + 1)
 
+        tri = np.tril(np.ones((T, T)))
+
         # Upper bound: soc[t] <= s_max
-        for t in range(T):
-            for tau in range(t + 1):
-                A_ub[t, tau] = eta_c
-                A_ub[t, T + tau] = -1.0 / eta_d
-            b_ub[t] = s_max - s_0
+        A_ub[:T, :T] = eta_c * tri
+        A_ub[:T, T : 2 * T] = (-1.0 / eta_d) * tri
+        b_ub[:T] = s_max - s_0
 
         # Lower bound: soc[t] >= s_min  =>  -soc[t] <= -s_min
-        for t in range(T):
-            for tau in range(t + 1):
-                A_ub[T + t, tau] = -eta_c
-                A_ub[T + t, T + tau] = 1.0 / eta_d
-            b_ub[T + t] = s_0 - s_min
+        A_ub[T : 2 * T, :T] = -eta_c * tri
+        A_ub[T : 2 * T, T : 2 * T] = (1.0 / eta_d) * tri
+        b_ub[T : 2 * T] = s_0 - s_min
 
         # Terminal constraint: soc[T-1] >= s_0
-        for tau in range(T):
-            A_ub[2 * T, tau] = -eta_c
-            A_ub[2 * T, T + tau] = 1.0 / eta_d
+        A_ub[2 * T, :T] = -eta_c
+        A_ub[2 * T, T : 2 * T] = 1.0 / eta_d
         b_ub[2 * T] = 0.0
 
         bounds = (

@@ -244,11 +244,16 @@ def detect_faults(
 
     # 3. Method B: Isolation Forest
     if iso_model is None:
-        # Train on chronological training slice
-        split_idx = int(len(df_out) * config.data.train_fraction)
-        train_slice = df_out.iloc[:split_idx]
-        train_expected = expected[:split_idx]
-        iso_model = train_isolation_forest(train_slice, train_expected, config)
+        iso_path = config.models_dir / "isolation_forest.joblib"
+        if iso_path.exists():
+            import joblib
+            iso_model = joblib.load(iso_path)
+        else:
+            # Fallback: Train on chronological training slice
+            split_idx = int(len(df_out) * config.data.train_fraction)
+            train_slice = df_out.iloc[:split_idx]
+            train_expected = expected[:split_idx]
+            iso_model = train_isolation_forest(train_slice, train_expected, config)
 
     flag_b = detect_faults_method_b(iso_model, df_out, expected, config)
 

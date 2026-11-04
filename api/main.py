@@ -259,6 +259,18 @@ def simulate(
     df_slice = _slice_and_validate_range(app.state.df, start, end, max_days=31)
     b_cfg = BatteryConfig(capacity_kwh=battery_kwh, max_power_kw=battery_kw)
 
+    if not hasattr(app.state, "simulate_cache"):
+        app.state.simulate_cache = {}
+    cache_key = (
+        str(df_slice.iloc[0]["timestamp"]),
+        str(df_slice.iloc[-1]["timestamp"]),
+        strategy,
+        battery_kwh,
+        battery_kw,
+    )
+    if cache_key in app.state.simulate_cache:
+        return app.state.simulate_cache[cache_key]
+
     # Run chosen strategy
     res_df, summary = run_simulation(
         df_horizon=df_slice,
@@ -300,7 +312,7 @@ def simulate(
             )
         )
 
-    return SimulateResponse(
+    resp = SimulateResponse(
         horizon_start=str(df_slice.iloc[0]["timestamp"]),
         horizon_end=str(df_slice.iloc[-1]["timestamp"]),
         hours=len(df_slice),
@@ -309,6 +321,8 @@ def simulate(
         summary=SimulationSummaryKPIs(**summary),
         baseline=SimulationSummaryKPIs(**baseline_summary),
     )
+    app.state.simulate_cache[cache_key] = resp
+    return resp
 
 
 @app.get("/api/compare", response_model=CompareResponse)
@@ -322,9 +336,22 @@ def compare_strategies(
     df_slice = _slice_and_validate_range(app.state.df, start, end, max_days=31)
     b_cfg = BatteryConfig(capacity_kwh=battery_kwh, max_power_kw=battery_kw)
 
+    if not hasattr(app.state, "compare_cache"):
+        app.state.compare_cache = {}
+    cache_key = (
+        str(df_slice.iloc[0]["timestamp"]),
+        str(df_slice.iloc[-1]["timestamp"]),
+        battery_kwh,
+        battery_kw,
+    )
+    if cache_key in app.state.compare_cache:
+        return app.state.compare_cache[cache_key]
+
     all_strat_res = run_all_strategies(
         df_horizon=df_slice,
         battery_config=b_cfg,
+        forecast_model=app.state.forecast_model,
+        iso_model=app.state.iso_model,
         config=app.state.config,
     )
 
@@ -347,7 +374,7 @@ def compare_strategies(
             )
         )
 
-    return CompareResponse(
+    resp = CompareResponse(
         horizon_start=str(df_slice.iloc[0]["timestamp"]),
         horizon_end=str(df_slice.iloc[-1]["timestamp"]),
         hours=len(df_slice),
@@ -359,6 +386,8 @@ def compare_strategies(
         },
         cumulative_cost_series=cum_series,
     )
+    app.state.compare_cache[cache_key] = resp
+    return resp
 
 
 @app.get("/api/outlook", response_model=OutlookResponse)
@@ -425,6 +454,15 @@ def get_fault_events(
     df_slice = _slice_and_validate_range(app.state.df, start, end, max_days=365)
     config: SystemConfig = app.state.config
 
+    if not hasattr(app.state, "faults_cache"):
+        app.state.faults_cache = {}
+    cache_key = (
+        str(df_slice.iloc[0]["timestamp"]),
+        str(df_slice.iloc[-1]["timestamp"]),
+    )
+    if cache_key in app.state.faults_cache:
+        return app.state.faults_cache[cache_key]
+
     diagnosed = detect_faults(
         df_slice,
         forecast_model=app.state.forecast_model,
@@ -471,13 +509,15 @@ def get_fault_events(
             )
         )
 
-    return FaultsResponse(
+    resp = FaultsResponse(
         total_events=len(event_items),
         total_energy_lost_kwh=round(total_energy_lost, 2),
         total_cost_lost=round(total_cost_lost, 2),
         currency=config.tariff.currency,
         events=event_items,
     )
+    app.state.faults_cache[cache_key] = resp
+    return resp
 
 
 @app.get("/api/period-summary", response_model=PeriodSummaryResponse)
