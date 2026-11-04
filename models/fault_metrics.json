@@ -1,0 +1,484 @@
+{
+  "evaluation_period": {
+    "start_timestamp": "2026-10-01 18:00:00",
+    "end_timestamp": "2026-12-31 23:00:00",
+    "total_test_hours": 2190,
+    "actual_fault_hours": 62
+  },
+  "method_a_residual_threshold": {
+    "precision": 1.0,
+    "recall": 0.3387,
+    "f1_score": 0.506,
+    "confusion_matrix": [
+      [
+        2128,
+        0
+      ],
+      [
+        41,
+        21
+      ]
+    ],
+    "true_positives": 21,
+    "false_positives": 0,
+    "true_negatives": 2128,
+    "false_negatives": 41
+  },
+  "method_b_isolation_forest": {
+    "precision": 0.5849,
+    "recall": 1.0,
+    "f1_score": 0.7381,
+    "confusion_matrix": [
+      [
+        2084,
+        44
+      ],
+      [
+        0,
+        62
+      ]
+    ],
+    "true_positives": 62,
+    "false_positives": 44,
+    "true_negatives": 2084,
+    "false_negatives": 0
+  },
+  "combined_hybrid": {
+    "precision": 0.5849,
+    "recall": 1.0,
+    "f1_score": 0.7381,
+    "confusion_matrix": [
+      [
+        2084,
+        44
+      ],
+      [
+        0,
+        62
+      ]
+    ],
+    "true_positives": 62,
+    "false_positives": 44,
+    "true_negatives": 2084,
+    "false_negatives": 0
+  },
+  "detected_events_summary": {
+    "total_events": 51,
+    "total_energy_lost_kwh": 108.73,
+    "severity_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 47
+    }
+  },
+  "test_events": [
+    {
+      "start": "2026-10-02 11:00:00",
+      "end": "2026-10-02 11:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.09,
+      "peak_residual_kw": 0.09
+    },
+    {
+      "start": "2026-10-02 14:00:00",
+      "end": "2026-10-02 14:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.078,
+      "peak_residual_kw": 0.078
+    },
+    {
+      "start": "2026-10-03 10:00:00",
+      "end": "2026-10-03 17:00:00",
+      "duration_h": 8,
+      "severity": "Low",
+      "energy_lost_kwh": 4.585,
+      "peak_residual_kw": 0.808
+    },
+    {
+      "start": "2026-10-04 08:00:00",
+      "end": "2026-10-04 08:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.124,
+      "peak_residual_kw": 0.124
+    },
+    {
+      "start": "2026-10-06 07:00:00",
+      "end": "2026-10-06 07:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.024,
+      "peak_residual_kw": 0.024
+    },
+    {
+      "start": "2026-10-06 11:00:00",
+      "end": "2026-10-06 15:00:00",
+      "duration_h": 5,
+      "severity": "Low",
+      "energy_lost_kwh": 1.846,
+      "peak_residual_kw": 0.528
+    },
+    {
+      "start": "2026-10-07 15:00:00",
+      "end": "2026-10-07 15:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.116,
+      "peak_residual_kw": 0.116
+    },
+    {
+      "start": "2026-10-09 07:00:00",
+      "end": "2026-10-09 13:00:00",
+      "duration_h": 7,
+      "severity": "Low",
+      "energy_lost_kwh": 3.965,
+      "peak_residual_kw": 1.036
+    },
+    {
+      "start": "2026-10-10 08:00:00",
+      "end": "2026-10-10 09:00:00",
+      "duration_h": 2,
+      "severity": "Low",
+      "energy_lost_kwh": 0.159,
+      "peak_residual_kw": 0.089
+    },
+    {
+      "start": "2026-10-11 14:00:00",
+      "end": "2026-10-11 14:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.166,
+      "peak_residual_kw": 0.166
+    },
+    {
+      "start": "2026-10-11 16:00:00",
+      "end": "2026-10-11 17:00:00",
+      "duration_h": 2,
+      "severity": "Low",
+      "energy_lost_kwh": 0.132,
+      "peak_residual_kw": 0.107
+    },
+    {
+      "start": "2026-10-12 10:00:00",
+      "end": "2026-10-12 15:00:00",
+      "duration_h": 6,
+      "severity": "Low",
+      "energy_lost_kwh": 7.674,
+      "peak_residual_kw": 1.474
+    },
+    {
+      "start": "2026-10-12 17:00:00",
+      "end": "2026-10-12 17:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.063,
+      "peak_residual_kw": 0.063
+    },
+    {
+      "start": "2026-10-13 08:00:00",
+      "end": "2026-10-13 08:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.084,
+      "peak_residual_kw": 0.084
+    },
+    {
+      "start": "2026-10-13 10:00:00",
+      "end": "2026-10-13 10:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.166,
+      "peak_residual_kw": 0.166
+    },
+    {
+      "start": "2026-10-14 17:00:00",
+      "end": "2026-10-14 17:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.047,
+      "peak_residual_kw": 0.047
+    },
+    {
+      "start": "2026-10-15 07:00:00",
+      "end": "2026-10-15 10:00:00",
+      "duration_h": 4,
+      "severity": "High",
+      "energy_lost_kwh": 10.615,
+      "peak_residual_kw": 4.153
+    },
+    {
+      "start": "2026-10-16 13:00:00",
+      "end": "2026-10-16 13:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.178,
+      "peak_residual_kw": 0.178
+    },
+    {
+      "start": "2026-10-16 15:00:00",
+      "end": "2026-10-16 15:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.109,
+      "peak_residual_kw": 0.109
+    },
+    {
+      "start": "2026-10-17 08:00:00",
+      "end": "2026-10-17 08:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.113,
+      "peak_residual_kw": 0.113
+    },
+    {
+      "start": "2026-10-18 15:00:00",
+      "end": "2026-10-18 15:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.162,
+      "peak_residual_kw": 0.162
+    },
+    {
+      "start": "2026-10-18 17:00:00",
+      "end": "2026-10-18 17:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.032,
+      "peak_residual_kw": 0.032
+    },
+    {
+      "start": "2026-10-20 10:00:00",
+      "end": "2026-10-20 10:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.228,
+      "peak_residual_kw": 0.228
+    },
+    {
+      "start": "2026-10-21 08:00:00",
+      "end": "2026-10-21 08:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.09,
+      "peak_residual_kw": 0.09
+    },
+    {
+      "start": "2026-10-22 17:00:00",
+      "end": "2026-10-22 17:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.041,
+      "peak_residual_kw": 0.041
+    },
+    {
+      "start": "2026-10-24 09:00:00",
+      "end": "2026-10-24 17:00:00",
+      "duration_h": 9,
+      "severity": "High",
+      "energy_lost_kwh": 35.683,
+      "peak_residual_kw": 5.531
+    },
+    {
+      "start": "2026-10-25 17:00:00",
+      "end": "2026-10-25 17:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.047,
+      "peak_residual_kw": 0.047
+    },
+    {
+      "start": "2026-10-26 09:00:00",
+      "end": "2026-10-26 09:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.146,
+      "peak_residual_kw": 0.146
+    },
+    {
+      "start": "2026-10-28 07:00:00",
+      "end": "2026-10-28 07:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.028,
+      "peak_residual_kw": 0.028
+    },
+    {
+      "start": "2026-10-28 14:00:00",
+      "end": "2026-10-28 14:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.169,
+      "peak_residual_kw": 0.169
+    },
+    {
+      "start": "2026-10-29 09:00:00",
+      "end": "2026-10-29 11:00:00",
+      "duration_h": 3,
+      "severity": "Low",
+      "energy_lost_kwh": 2.223,
+      "peak_residual_kw": 0.894
+    },
+    {
+      "start": "2026-10-31 09:00:00",
+      "end": "2026-10-31 09:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.127,
+      "peak_residual_kw": 0.127
+    },
+    {
+      "start": "2026-11-02 12:00:00",
+      "end": "2026-11-02 12:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.251,
+      "peak_residual_kw": 0.251
+    },
+    {
+      "start": "2026-11-06 10:00:00",
+      "end": "2026-11-06 10:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.147,
+      "peak_residual_kw": 0.147
+    },
+    {
+      "start": "2026-11-13 08:00:00",
+      "end": "2026-11-13 08:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.071,
+      "peak_residual_kw": 0.071
+    },
+    {
+      "start": "2026-11-14 13:00:00",
+      "end": "2026-11-14 16:00:00",
+      "duration_h": 4,
+      "severity": "High",
+      "energy_lost_kwh": 10.405,
+      "peak_residual_kw": 3.487
+    },
+    {
+      "start": "2026-11-15 12:00:00",
+      "end": "2026-11-15 12:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.24,
+      "peak_residual_kw": 0.24
+    },
+    {
+      "start": "2026-11-24 10:00:00",
+      "end": "2026-11-24 10:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.136,
+      "peak_residual_kw": 0.136
+    },
+    {
+      "start": "2026-11-27 14:00:00",
+      "end": "2026-11-27 14:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.131,
+      "peak_residual_kw": 0.131
+    },
+    {
+      "start": "2026-11-29 10:00:00",
+      "end": "2026-11-29 15:00:00",
+      "duration_h": 6,
+      "severity": "Low",
+      "energy_lost_kwh": 2.78,
+      "peak_residual_kw": 0.614
+    },
+    {
+      "start": "2026-12-06 15:00:00",
+      "end": "2026-12-06 15:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.128,
+      "peak_residual_kw": 0.128
+    },
+    {
+      "start": "2026-12-10 15:00:00",
+      "end": "2026-12-10 15:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.094,
+      "peak_residual_kw": 0.094
+    },
+    {
+      "start": "2026-12-12 08:00:00",
+      "end": "2026-12-12 13:00:00",
+      "duration_h": 6,
+      "severity": "Low",
+      "energy_lost_kwh": 5.377,
+      "peak_residual_kw": 1.128
+    },
+    {
+      "start": "2026-12-13 08:00:00",
+      "end": "2026-12-13 08:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.116,
+      "peak_residual_kw": 0.116
+    },
+    {
+      "start": "2026-12-13 13:00:00",
+      "end": "2026-12-13 13:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.16,
+      "peak_residual_kw": 0.16
+    },
+    {
+      "start": "2026-12-17 08:00:00",
+      "end": "2026-12-17 08:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.052,
+      "peak_residual_kw": 0.052
+    },
+    {
+      "start": "2026-12-17 11:00:00",
+      "end": "2026-12-17 16:00:00",
+      "duration_h": 6,
+      "severity": "High",
+      "energy_lost_kwh": 18.948,
+      "peak_residual_kw": 4.237
+    },
+    {
+      "start": "2026-12-20 16:00:00",
+      "end": "2026-12-20 16:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.049,
+      "peak_residual_kw": 0.049
+    },
+    {
+      "start": "2026-12-25 12:00:00",
+      "end": "2026-12-25 12:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.154,
+      "peak_residual_kw": 0.154
+    },
+    {
+      "start": "2026-12-28 15:00:00",
+      "end": "2026-12-28 15:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.087,
+      "peak_residual_kw": 0.087
+    },
+    {
+      "start": "2026-12-31 15:00:00",
+      "end": "2026-12-31 15:00:00",
+      "duration_h": 1,
+      "severity": "Low",
+      "energy_lost_kwh": 0.099,
+      "peak_residual_kw": 0.099
+    }
+  ]
+}

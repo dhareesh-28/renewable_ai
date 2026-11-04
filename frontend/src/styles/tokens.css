@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Core Palette */
+  --color-bg: #F5F1EA;
+  --color-surface: #FBF9F5;
+  --color-raised: #FFFFFF;
+  --color-hairline: #E4DDD0;
+  --color-ink: #1B1F1D;
+  --color-muted: #5E625C;
+  
+  /* Deep Moss (for cost comparison band and footer only) */
+  --color-moss: #1F2B26;
+  --color-moss-text: #EDE8DD;
+
+  /* Brass */
+  --color-brass-rule: #B08D57;
+  --color-brass-text: #856533; /* AA contrast compliant >= 4.77:1 */
+
+  /* Data Colours */
+  --color-solar: #D9941E;
+  --color-battery: #3F8F6B;
+  --color-grid: #5F7A8C;
+  --color-load: #8A8578;
+  --color-fault: #C4513F;
+  --color-forecast: rgba(217, 148, 30, 0.6);
+
+  /* Radius Tokens */
+  --radius-frame: 16px;
+  --radius-control: 6px;
+  --radius-image: 2px;
+  --radius-pill: 9999px;
+
+  /* Spacing Tokens */
+  --section-py-desktop: 140px;
+  --section-py-tablet: 80px;
+  --section-py-mobile: 56px;
+
+  /* Layout */
+  --max-width: 1320px;
+}
+
+/* Base Body Styles */
+html {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Tabular Numerals Utility */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* Typography Utility Classes with Bodoni Moda optical-size 96 and weight 400 */
+.font-display-serif {
+  font-family: 'Bodoni Moda Variable', 'Bodoni Moda', 'Playfair Display Variable', Georgia, serif;
+  font-variation-settings: 'opsz' 96, 'wght' 400;
+}
+
+.text-wordmark {
+  font-family: 'Bodoni Moda Variable', 'Bodoni Moda', Georgia, serif;
+  font-variation-settings: 'opsz' 96, 'wght' 400;
+  font-size: clamp(120px, 18vw, 280px);
+  letter-spacing: -0.02em;
+  line-height: 0.85;
+}
+
+.text-display {
+  font-family: 'Bodoni Moda Variable', 'Bodoni Moda', Georgia, serif;
+  font-variation-settings: 'opsz' 96, 'wght' 400;
+  font-size: 88px;
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  font-weight: 300;
+}
+
+.text-h1 {
+  font-family: 'Bodoni Moda Variable', 'Bodoni Moda', Georgia, serif;
+  font-variation-settings: 'opsz' 96, 'wght' 400;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 350;
+}
+
+.text-h2 {
+  font-family: 'Bodoni Moda Variable', 'Bodoni Moda', Georgia, serif;
+  font-variation-settings: 'opsz' 96, 'wght' 400;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  font-weight: 350;
+}
+
+.text-h3 {
+  font-family: 'Bodoni Moda Variable', 'Bodoni Moda', Georgia, serif;
+  font-variation-settings: 'opsz' 48, 'wght' 400;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.text-body {
+  font-family: 'Inter Variable', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-ui {
+  font-family: 'Inter Variable', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.text-caption {
+  font-family: 'Inter Variable', sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.tracking-label {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+/* Hairline borders */
+.border-hairline {
+  border-color: var(--color-hairline);
+}
+
+.border-b-hairline {
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.border-t-hairline {
+  border-top: 1px solid var(--color-hairline);
+}
+
+/* Smooth Focus States */
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+/* Scrim for hero photo */
+.hero-scrim {
+  background: linear-gradient(
+    to bottom,
+    rgba(27, 31, 29, 0.25) 0%,
+    rgba(27, 31, 29, 0.1) 40%,
+    rgba(27, 31, 29, 0.65) 100%
+  );
+}

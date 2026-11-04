@@ -1,0 +1,4062 @@
+{
+  "model_metrics": {
+    "mae": 0.0216,
+    "rmse": 0.0463,
+    "r2": 0.9993
+  },
+  "baseline_metrics": {
+    "mae": 0.2923,
+    "rmse": 0.68,
+    "r2": 0.8382
+  },
+  "evaluation_summary": {
+    "train_samples_healthy": 6480,
+    "test_samples_healthy": 2128,
+    "mae_improvement_percent": 92.62,
+    "model_beats_baseline": true
+  },
+  "feature_importances": [
+    {
+      "feature": "irradiance_wm2",
+      "importance": 0.99907
+    },
+    {
+      "feature": "temperature_c",
+      "importance": 0.0005
+    },
+    {
+      "feature": "day_cos",
+      "importance": 0.00012
+    },
+    {
+      "feature": "day_of_year",
+      "importance": 0.00011
+    },
+    {
+      "feature": "cloud_cover",
+      "importance": 9e-05
+    },
+    {
+      "feature": "day_sin",
+      "importance": 5e-05
+    },
+    {
+      "feature": "hour",
+      "importance": 2e-05
+    },
+    {
+      "feature": "hour_sin",
+      "importance": 2e-05
+    },
+    {
+      "feature": "month",
+      "importance": 1e-05
+    },
+    {
+      "feature": "hour_cos",
+      "importance": 1e-05
+    }
+  ],
+  "test_samples": [
+    {
+      "timestamp": "2026-10-02 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-02 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-02 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 42.69,
+      "actual": 0.341,
+      "predicted": 0.337,
+      "naive": 0.847
+    },
+    {
+      "timestamp": "2026-10-02 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 215.19,
+      "actual": 1.667,
+      "predicted": 1.648,
+      "naive": 4.226
+    },
+    {
+      "timestamp": "2026-10-02 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-03 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-03 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 81.15,
+      "actual": 0.647,
+      "predicted": 0.645,
+      "naive": 0.341
+    },
+    {
+      "timestamp": "2026-10-03 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-03 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-03 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-03 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-04 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-04 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 346.03,
+      "actual": 2.548,
+      "predicted": 2.672,
+      "naive": 1.249
+    },
+    {
+      "timestamp": "2026-10-04 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 567.42,
+      "actual": 4.08,
+      "predicted": 4.079,
+      "naive": 1.9
+    },
+    {
+      "timestamp": "2026-10-04 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-04 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-05 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-05 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 282.77,
+      "actual": 2.19,
+      "predicted": 2.176,
+      "naive": 2.548
+    },
+    {
+      "timestamp": "2026-10-05 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-05 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-06 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 328.93,
+      "actual": 2.47,
+      "predicted": 2.449,
+      "naive": 2.927
+    },
+    {
+      "timestamp": "2026-10-06 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 75.29,
+      "actual": 0.564,
+      "predicted": 0.58,
+      "naive": 0.571
+    },
+    {
+      "timestamp": "2026-10-07 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-07 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 400.3,
+      "actual": 3.071,
+      "predicted": 3.028,
+      "naive": 3.163
+    },
+    {
+      "timestamp": "2026-10-07 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 266.44,
+      "actual": 2.009,
+      "predicted": 2.012,
+      "naive": 0.737
+    },
+    {
+      "timestamp": "2026-10-07 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-08 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-08 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-08 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 348.62,
+      "actual": 2.646,
+      "predicted": 2.674,
+      "naive": 1.583
+    },
+    {
+      "timestamp": "2026-10-08 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 506.4,
+      "actual": 3.868,
+      "predicted": 3.779,
+      "naive": 2.192
+    },
+    {
+      "timestamp": "2026-10-08 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 349.83,
+      "actual": 2.568,
+      "predicted": 2.612,
+      "naive": 2.009
+    },
+    {
+      "timestamp": "2026-10-08 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 140.42,
+      "actual": 1.093,
+      "predicted": 1.076,
+      "naive": 0.847
+    },
+    {
+      "timestamp": "2026-10-08 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-08 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-08 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-09 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-09 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-09 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-09 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-09 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-10 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-10 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 473.2,
+      "actual": 3.506,
+      "predicted": 3.568,
+      "naive": 4.079
+    },
+    {
+      "timestamp": "2026-10-10 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 572.28,
+      "actual": 4.125,
+      "predicted": 4.254,
+      "naive": 4.3
+    },
+    {
+      "timestamp": "2026-10-10 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 207.88,
+      "actual": 1.566,
+      "predicted": 1.578,
+      "naive": 2.376
+    },
+    {
+      "timestamp": "2026-10-10 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-11 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 119.88,
+      "actual": 0.962,
+      "predicted": 0.944,
+      "naive": 0.729
+    },
+    {
+      "timestamp": "2026-10-11 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 717.52,
+      "actual": 5.247,
+      "predicted": 5.119,
+      "naive": 3.77
+    },
+    {
+      "timestamp": "2026-10-11 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-11 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-12 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-12 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-12 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 352.71,
+      "actual": 2.746,
+      "predicted": 2.7,
+      "naive": 2.183
+    },
+    {
+      "timestamp": "2026-10-12 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-12 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-13 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-13 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-13 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 137.21,
+      "actual": 1.113,
+      "predicted": 1.073,
+      "naive": 1.126
+    },
+    {
+      "timestamp": "2026-10-13 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 724.87,
+      "actual": 5.155,
+      "predicted": 5.321,
+      "naive": 3.831
+    },
+    {
+      "timestamp": "2026-10-13 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 545.46,
+      "actual": 4.027,
+      "predicted": 3.925,
+      "naive": 2.983
+    },
+    {
+      "timestamp": "2026-10-13 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 137.19,
+      "actual": 1.055,
+      "predicted": 1.036,
+      "naive": 1.063
+    },
+    {
+      "timestamp": "2026-10-14 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 109.16,
+      "actual": 0.872,
+      "predicted": 0.844,
+      "naive": 1.113
+    },
+    {
+      "timestamp": "2026-10-14 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-14 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-15 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-15 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-15 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 637.08,
+      "actual": 4.79,
+      "predicted": 4.637,
+      "naive": 4.494
+    },
+    {
+      "timestamp": "2026-10-15 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 705.97,
+      "actual": 5.177,
+      "predicted": 5.039,
+      "naive": 4.721
+    },
+    {
+      "timestamp": "2026-10-15 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-15 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-16 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 451.6,
+      "actual": 3.423,
+      "predicted": 3.449,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-16 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 601.15,
+      "actual": 4.359,
+      "predicted": 4.405,
+      "naive": 5.177
+    },
+    {
+      "timestamp": "2026-10-16 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 642.49,
+      "actual": 4.46,
+      "predicted": 4.638,
+      "naive": 4.848
+    },
+    {
+      "timestamp": "2026-10-16 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 443.01,
+      "actual": 3.169,
+      "predicted": 3.278,
+      "naive": 2.834
+    },
+    {
+      "timestamp": "2026-10-16 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 304.25,
+      "actual": 2.311,
+      "predicted": 2.31,
+      "naive": 1.886
+    },
+    {
+      "timestamp": "2026-10-16 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 118.87,
+      "actual": 0.952,
+      "predicted": 0.935,
+      "naive": 0.743
+    },
+    {
+      "timestamp": "2026-10-17 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-17 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 350.82,
+      "actual": 2.584,
+      "predicted": 2.697,
+      "naive": 2.504
+    },
+    {
+      "timestamp": "2026-10-17 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 659.44,
+      "actual": 4.911,
+      "predicted": 4.839,
+      "naive": 4.472
+    },
+    {
+      "timestamp": "2026-10-17 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 135.87,
+      "actual": 1.045,
+      "predicted": 1.031,
+      "naive": 0.952
+    },
+    {
+      "timestamp": "2026-10-17 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-17 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-18 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-18 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 641.65,
+      "actual": 4.778,
+      "predicted": 4.631,
+      "naive": 5.262
+    },
+    {
+      "timestamp": "2026-10-18 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 293.6,
+      "actual": 2.314,
+      "predicted": 2.24,
+      "naive": 2.593
+    },
+    {
+      "timestamp": "2026-10-18 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-18 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-19 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-19 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 639.02,
+      "actual": 4.75,
+      "predicted": 4.644,
+      "naive": 4.415
+    },
+    {
+      "timestamp": "2026-10-19 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 526.27,
+      "actual": 3.923,
+      "predicted": 3.853,
+      "naive": 4.778
+    },
+    {
+      "timestamp": "2026-10-20 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-20 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-20 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-20 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-21 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-21 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 803.76,
+      "actual": 5.783,
+      "predicted": 5.807,
+      "naive": 5.711
+    },
+    {
+      "timestamp": "2026-10-21 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 342.77,
+      "actual": 2.545,
+      "predicted": 2.567,
+      "naive": 2.575
+    },
+    {
+      "timestamp": "2026-10-22 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-22 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-22 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 643.73,
+      "actual": 4.645,
+      "predicted": 4.654,
+      "naive": 5.783
+    },
+    {
+      "timestamp": "2026-10-22 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 322.03,
+      "actual": 2.4,
+      "predicted": 2.399,
+      "naive": 2.545
+    },
+    {
+      "timestamp": "2026-10-22 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-23 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-23 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-23 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-23 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 320.98,
+      "actual": 2.474,
+      "predicted": 2.407,
+      "naive": 2.547
+    },
+    {
+      "timestamp": "2026-10-23 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 582.72,
+      "actual": 4.324,
+      "predicted": 4.271,
+      "naive": 4.284
+    },
+    {
+      "timestamp": "2026-10-23 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 272.88,
+      "actual": 2.091,
+      "predicted": 2.062,
+      "naive": 2.4
+    },
+    {
+      "timestamp": "2026-10-23 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-23 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-24 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-24 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 105.72,
+      "actual": 0.839,
+      "predicted": 0.839,
+      "naive": 0.956
+    },
+    {
+      "timestamp": "2026-10-25 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-25 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-25 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-25 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 122.47,
+      "actual": 0.976,
+      "predicted": 0.974,
+      "naive": 0.839
+    },
+    {
+      "timestamp": "2026-10-25 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 530.34,
+      "actual": 3.75,
+      "predicted": 3.867,
+      "naive": 0.026
+    },
+    {
+      "timestamp": "2026-10-26 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-26 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-26 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-26 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 669.99,
+      "actual": 4.781,
+      "predicted": 4.894,
+      "naive": 4.973
+    },
+    {
+      "timestamp": "2026-10-26 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 106.99,
+      "actual": 0.823,
+      "predicted": 0.829,
+      "naive": 0.92
+    },
+    {
+      "timestamp": "2026-10-26 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-26 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-27 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-27 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-27 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 78.63,
+      "actual": 0.606,
+      "predicted": 0.619,
+      "naive": 0.912
+    },
+    {
+      "timestamp": "2026-10-27 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 223.91,
+      "actual": 1.694,
+      "predicted": 1.694,
+      "naive": 3.589
+    },
+    {
+      "timestamp": "2026-10-27 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-27 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-28 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-28 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 106.3,
+      "actual": 0.813,
+      "predicted": 0.841,
+      "naive": 0.606
+    },
+    {
+      "timestamp": "2026-10-28 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 566.99,
+      "actual": 3.95,
+      "predicted": 4.119,
+      "naive": 2.782
+    },
+    {
+      "timestamp": "2026-10-28 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-28 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-28 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-29 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-29 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-29 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-29 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-29 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 290.11,
+      "actual": 2.175,
+      "predicted": 2.24,
+      "naive": 2.302
+    },
+    {
+      "timestamp": "2026-10-29 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 559.28,
+      "actual": 4.165,
+      "predicted": 4.13,
+      "naive": 3.95
+    },
+    {
+      "timestamp": "2026-10-29 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 400.67,
+      "actual": 2.959,
+      "predicted": 2.974,
+      "naive": 3.081
+    },
+    {
+      "timestamp": "2026-10-29 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 251.66,
+      "actual": 1.909,
+      "predicted": 1.898,
+      "naive": 1.916
+    },
+    {
+      "timestamp": "2026-10-29 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-30 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 642.9,
+      "actual": 4.673,
+      "predicted": 4.655,
+      "naive": 4.835
+    },
+    {
+      "timestamp": "2026-10-30 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 689.19,
+      "actual": 4.956,
+      "predicted": 4.983,
+      "naive": 4.806
+    },
+    {
+      "timestamp": "2026-10-30 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-30 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-31 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-31 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-10-31 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 87.24,
+      "actual": 0.691,
+      "predicted": 0.689,
+      "naive": 0.642
+    },
+    {
+      "timestamp": "2026-10-31 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 289.2,
+      "actual": 2.235,
+      "predicted": 2.235,
+      "naive": 1.863
+    },
+    {
+      "timestamp": "2026-11-01 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-01 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 410.59,
+      "actual": 3.065,
+      "predicted": 3.1,
+      "naive": 3.147
+    },
+    {
+      "timestamp": "2026-11-01 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 494.34,
+      "actual": 3.617,
+      "predicted": 3.707,
+      "naive": 3.664
+    },
+    {
+      "timestamp": "2026-11-01 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-01 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-02 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-02 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 697.55,
+      "actual": 5.124,
+      "predicted": 5.114,
+      "naive": 5.095
+    },
+    {
+      "timestamp": "2026-11-02 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 107.64,
+      "actual": 0.837,
+      "predicted": 0.83,
+      "naive": 0.862
+    },
+    {
+      "timestamp": "2026-11-02 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-02 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-03 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-03 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 226.94,
+      "actual": 1.744,
+      "predicted": 1.795,
+      "naive": 2.34
+    },
+    {
+      "timestamp": "2026-11-03 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 623.5,
+      "actual": 4.706,
+      "predicted": 4.547,
+      "naive": 5.186
+    },
+    {
+      "timestamp": "2026-11-03 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 673.46,
+      "actual": 4.907,
+      "predicted": 4.922,
+      "naive": 5.124
+    },
+    {
+      "timestamp": "2026-11-03 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 579.19,
+      "actual": 4.154,
+      "predicted": 4.212,
+      "naive": 4.574
+    },
+    {
+      "timestamp": "2026-11-03 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 383.79,
+      "actual": 2.825,
+      "predicted": 2.915,
+      "naive": 3.577
+    },
+    {
+      "timestamp": "2026-11-04 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-04 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 564.13,
+      "actual": 4.114,
+      "predicted": 4.176,
+      "naive": 4.162
+    },
+    {
+      "timestamp": "2026-11-04 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 511.6,
+      "actual": 3.91,
+      "predicted": 3.791,
+      "naive": 4.154
+    },
+    {
+      "timestamp": "2026-11-04 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 259.49,
+      "actual": 1.966,
+      "predicted": 1.959,
+      "naive": 1.804
+    },
+    {
+      "timestamp": "2026-11-04 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-05 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-05 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-05 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 415.73,
+      "actual": 3.091,
+      "predicted": 3.158,
+      "naive": 3.998
+    },
+    {
+      "timestamp": "2026-11-05 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 239.22,
+      "actual": 1.815,
+      "predicted": 1.831,
+      "naive": 3.064
+    },
+    {
+      "timestamp": "2026-11-05 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 59.79,
+      "actual": 0.484,
+      "predicted": 0.465,
+      "naive": 0.636
+    },
+    {
+      "timestamp": "2026-11-06 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-06 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-06 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-06 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 479.26,
+      "actual": 3.547,
+      "predicted": 3.565,
+      "naive": 3.091
+    },
+    {
+      "timestamp": "2026-11-06 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 431.59,
+      "actual": 3.136,
+      "predicted": 3.191,
+      "naive": 2.835
+    },
+    {
+      "timestamp": "2026-11-06 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 175.35,
+      "actual": 1.336,
+      "predicted": 1.343,
+      "naive": 1.151
+    },
+    {
+      "timestamp": "2026-11-06 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-06 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-07 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-07 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 58.98,
+      "actual": 0.47,
+      "predicted": 0.465,
+      "naive": 0.399
+    },
+    {
+      "timestamp": "2026-11-07 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 191.57,
+      "actual": 1.536,
+      "predicted": 1.491,
+      "naive": 1.285
+    },
+    {
+      "timestamp": "2026-11-07 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 435.05,
+      "actual": 3.423,
+      "predicted": 3.243,
+      "naive": 3.547
+    },
+    {
+      "timestamp": "2026-11-07 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 372.08,
+      "actual": 2.769,
+      "predicted": 2.799,
+      "naive": 3.136
+    },
+    {
+      "timestamp": "2026-11-07 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 242.71,
+      "actual": 1.831,
+      "predicted": 1.848,
+      "naive": 2.663
+    },
+    {
+      "timestamp": "2026-11-07 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 35.86,
+      "actual": 0.284,
+      "predicted": 0.283,
+      "naive": 0.48
+    },
+    {
+      "timestamp": "2026-11-08 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-08 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 33.41,
+      "actual": 0.27,
+      "predicted": 0.261,
+      "naive": 0.47
+    },
+    {
+      "timestamp": "2026-11-08 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 104.37,
+      "actual": 0.864,
+      "predicted": 0.835,
+      "naive": 1.536
+    },
+    {
+      "timestamp": "2026-11-08 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-09 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-09 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-09 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 533.86,
+      "actual": 4.012,
+      "predicted": 4.005,
+      "naive": 3.504
+    },
+    {
+      "timestamp": "2026-11-09 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 52.71,
+      "actual": 0.405,
+      "predicted": 0.409,
+      "naive": 0.328
+    },
+    {
+      "timestamp": "2026-11-09 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-09 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 169.08,
+      "actual": 1.33,
+      "predicted": 1.291,
+      "naive": 1.233
+    },
+    {
+      "timestamp": "2026-11-10 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-10 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-11 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-11 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-11 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 470.5,
+      "actual": 3.562,
+      "predicted": 3.564,
+      "naive": 3.793
+    },
+    {
+      "timestamp": "2026-11-11 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 657.77,
+      "actual": 4.746,
+      "predicted": 4.831,
+      "naive": 3.975
+    },
+    {
+      "timestamp": "2026-11-12 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 452.47,
+      "actual": 3.507,
+      "predicted": 3.396,
+      "naive": 4.767
+    },
+    {
+      "timestamp": "2026-11-12 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 49.58,
+      "actual": 0.384,
+      "predicted": 0.389,
+      "naive": 0.413
+    },
+    {
+      "timestamp": "2026-11-13 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-13 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-13 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 227.93,
+      "actual": 1.742,
+      "predicted": 1.813,
+      "naive": 1.658
+    },
+    {
+      "timestamp": "2026-11-13 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 709.38,
+      "actual": 5.341,
+      "predicted": 5.152,
+      "naive": 3.972
+    },
+    {
+      "timestamp": "2026-11-13 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 75.39,
+      "actual": 0.608,
+      "predicted": 0.582,
+      "naive": 0.384
+    },
+    {
+      "timestamp": "2026-11-13 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-14 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-14 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 463.04,
+      "actual": 3.406,
+      "predicted": 3.473,
+      "naive": 5.341
+    },
+    {
+      "timestamp": "2026-11-14 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-14 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-15 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-15 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 287.58,
+      "actual": 2.143,
+      "predicted": 2.18,
+      "naive": 0.008
+    },
+    {
+      "timestamp": "2026-11-15 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-15 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-15 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-16 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-16 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 58.42,
+      "actual": 0.464,
+      "predicted": 0.467,
+      "naive": 0.624
+    },
+    {
+      "timestamp": "2026-11-16 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 452.1,
+      "actual": 3.514,
+      "predicted": 3.456,
+      "naive": 5.227
+    },
+    {
+      "timestamp": "2026-11-16 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 519.72,
+      "actual": 3.864,
+      "predicted": 3.852,
+      "naive": 5.393
+    },
+    {
+      "timestamp": "2026-11-16 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-17 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-17 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-17 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-17 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 353.03,
+      "actual": 2.744,
+      "predicted": 2.725,
+      "naive": 2.391
+    },
+    {
+      "timestamp": "2026-11-17 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 473.18,
+      "actual": 3.58,
+      "predicted": 3.577,
+      "naive": 3.385
+    },
+    {
+      "timestamp": "2026-11-17 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 182.13,
+      "actual": 1.401,
+      "predicted": 1.401,
+      "naive": 1.725
+    },
+    {
+      "timestamp": "2026-11-17 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-18 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-18 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-18 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 117.83,
+      "actual": 0.941,
+      "predicted": 0.943,
+      "naive": 2.744
+    },
+    {
+      "timestamp": "2026-11-18 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 220.96,
+      "actual": 1.736,
+      "predicted": 1.718,
+      "naive": 3.663
+    },
+    {
+      "timestamp": "2026-11-18 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 265.6,
+      "actual": 2.066,
+      "predicted": 2.042,
+      "naive": 2.551
+    },
+    {
+      "timestamp": "2026-11-18 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-19 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-19 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 31.16,
+      "actual": 0.255,
+      "predicted": 0.238,
+      "naive": 0.302
+    },
+    {
+      "timestamp": "2026-11-19 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 192.21,
+      "actual": 1.533,
+      "predicted": 1.499,
+      "naive": 0.941
+    },
+    {
+      "timestamp": "2026-11-19 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-20 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-20 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-20 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 50.64,
+      "actual": 0.415,
+      "predicted": 0.402,
+      "naive": 0.255
+    },
+    {
+      "timestamp": "2026-11-20 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 192.5,
+      "actual": 1.51,
+      "predicted": 1.503,
+      "naive": 1.533
+    },
+    {
+      "timestamp": "2026-11-20 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 389.1,
+      "actual": 2.93,
+      "predicted": 2.977,
+      "naive": 3.11
+    },
+    {
+      "timestamp": "2026-11-20 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 170.8,
+      "actual": 1.293,
+      "predicted": 1.325,
+      "naive": 1.464
+    },
+    {
+      "timestamp": "2026-11-20 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-20 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-21 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 32.75,
+      "actual": 0.267,
+      "predicted": 0.258,
+      "naive": 0.415
+    },
+    {
+      "timestamp": "2026-11-21 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 109.93,
+      "actual": 0.868,
+      "predicted": 0.864,
+      "naive": 1.154
+    },
+    {
+      "timestamp": "2026-11-21 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 200.63,
+      "actual": 1.562,
+      "predicted": 1.592,
+      "naive": 1.51
+    },
+    {
+      "timestamp": "2026-11-21 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 304.21,
+      "actual": 2.266,
+      "predicted": 2.334,
+      "naive": 2.395
+    },
+    {
+      "timestamp": "2026-11-21 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 175.54,
+      "actual": 1.382,
+      "predicted": 1.371,
+      "naive": 1.293
+    },
+    {
+      "timestamp": "2026-11-21 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-22 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-22 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-22 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 546.88,
+      "actual": 4.008,
+      "predicted": 3.992,
+      "naive": 2.751
+    },
+    {
+      "timestamp": "2026-11-22 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 465.38,
+      "actual": 3.451,
+      "predicted": 3.498,
+      "naive": 2.493
+    },
+    {
+      "timestamp": "2026-11-22 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-23 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-23 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-23 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 389.14,
+      "actual": 3.063,
+      "predicted": 2.974,
+      "naive": 3.031
+    },
+    {
+      "timestamp": "2026-11-24 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-24 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 441.14,
+      "actual": 3.296,
+      "predicted": 3.384,
+      "naive": 2.999
+    },
+    {
+      "timestamp": "2026-11-24 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 452.97,
+      "actual": 3.333,
+      "predicted": 3.409,
+      "naive": 3.063
+    },
+    {
+      "timestamp": "2026-11-24 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-24 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-25 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-25 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-25 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 258.12,
+      "actual": 1.979,
+      "predicted": 1.979,
+      "naive": 2.232
+    },
+    {
+      "timestamp": "2026-11-25 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 71.21,
+      "actual": 0.565,
+      "predicted": 0.556,
+      "naive": 0.582
+    },
+    {
+      "timestamp": "2026-11-25 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-25 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-25 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-26 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-26 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-26 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 309.17,
+      "actual": 2.487,
+      "predicted": 2.369,
+      "naive": 3.527
+    },
+    {
+      "timestamp": "2026-11-26 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 287.51,
+      "actual": 2.247,
+      "predicted": 2.207,
+      "naive": 4.176
+    },
+    {
+      "timestamp": "2026-11-26 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 296.69,
+      "actual": 2.242,
+      "predicted": 2.289,
+      "naive": 5.067
+    },
+    {
+      "timestamp": "2026-11-26 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-26 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-26 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-27 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-27 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 485.8,
+      "actual": 3.826,
+      "predicted": 3.627,
+      "naive": 2.242
+    },
+    {
+      "timestamp": "2026-11-27 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 480.68,
+      "actual": 3.592,
+      "predicted": 3.571,
+      "naive": 2.642
+    },
+    {
+      "timestamp": "2026-11-27 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 160.8,
+      "actual": 1.229,
+      "predicted": 1.248,
+      "naive": 1.217
+    },
+    {
+      "timestamp": "2026-11-27 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 42.45,
+      "actual": 0.342,
+      "predicted": 0.336,
+      "naive": 0.337
+    },
+    {
+      "timestamp": "2026-11-28 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-28 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 65.81,
+      "actual": 0.528,
+      "predicted": 0.527,
+      "naive": 0.326
+    },
+    {
+      "timestamp": "2026-11-28 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 523.0,
+      "actual": 4.007,
+      "predicted": 3.884,
+      "naive": 3.315
+    },
+    {
+      "timestamp": "2026-11-28 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 573.08,
+      "actual": 4.199,
+      "predicted": 4.26,
+      "naive": 3.592
+    },
+    {
+      "timestamp": "2026-11-28 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-28 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-29 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-29 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 226.44,
+      "actual": 1.763,
+      "predicted": 1.803,
+      "naive": 1.729
+    },
+    {
+      "timestamp": "2026-11-29 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 266.35,
+      "actual": 2.061,
+      "predicted": 2.045,
+      "naive": 1.69
+    },
+    {
+      "timestamp": "2026-11-30 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-30 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-11-30 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 252.8,
+      "actual": 1.994,
+      "predicted": 1.976,
+      "naive": 1.763
+    },
+    {
+      "timestamp": "2026-11-30 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 680.65,
+      "actual": 5.043,
+      "predicted": 4.988,
+      "naive": 4.325
+    },
+    {
+      "timestamp": "2026-11-30 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 696.19,
+      "actual": 5.145,
+      "predicted": 5.095,
+      "naive": 4.686
+    },
+    {
+      "timestamp": "2026-11-30 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 671.85,
+      "actual": 4.836,
+      "predicted": 4.928,
+      "naive": 4.599
+    },
+    {
+      "timestamp": "2026-11-30 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 60.44,
+      "actual": 0.45,
+      "predicted": 0.471,
+      "naive": 0.555
+    },
+    {
+      "timestamp": "2026-11-30 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-01 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-01 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-01 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-01 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 264.13,
+      "actual": 2.006,
+      "predicted": 2.039,
+      "naive": 1.813
+    },
+    {
+      "timestamp": "2026-12-01 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-02 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-02 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-02 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-02 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 438.4,
+      "actual": 3.355,
+      "predicted": 3.37,
+      "naive": 3.22
+    },
+    {
+      "timestamp": "2026-12-02 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 665.85,
+      "actual": 4.845,
+      "predicted": 4.937,
+      "naive": 5.112
+    },
+    {
+      "timestamp": "2026-12-02 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-03 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-03 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 223.99,
+      "actual": 1.811,
+      "predicted": 1.759,
+      "naive": 1.996
+    },
+    {
+      "timestamp": "2026-12-03 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 577.93,
+      "actual": 4.338,
+      "predicted": 4.29,
+      "naive": 5.027
+    },
+    {
+      "timestamp": "2026-12-03 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 184.74,
+      "actual": 1.418,
+      "predicted": 1.43,
+      "naive": 1.884
+    },
+    {
+      "timestamp": "2026-12-04 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-04 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 218.78,
+      "actual": 1.749,
+      "predicted": 1.738,
+      "naive": 1.811
+    },
+    {
+      "timestamp": "2026-12-04 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-04 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-05 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-05 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-05 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-05 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 131.29,
+      "actual": 1.074,
+      "predicted": 1.065,
+      "naive": 1.749
+    },
+    {
+      "timestamp": "2026-12-05 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 216.21,
+      "actual": 1.699,
+      "predicted": 1.689,
+      "naive": 2.488
+    },
+    {
+      "timestamp": "2026-12-05 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-05 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-06 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-06 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 443.94,
+      "actual": 3.237,
+      "predicted": 3.365,
+      "naive": 1.699
+    },
+    {
+      "timestamp": "2026-12-06 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-07 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-07 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 54.94,
+      "actual": 0.428,
+      "predicted": 0.434,
+      "naive": 0.524
+    },
+    {
+      "timestamp": "2026-12-07 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 391.74,
+      "actual": 3.017,
+      "predicted": 3.0,
+      "naive": 3.412
+    },
+    {
+      "timestamp": "2026-12-07 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-08 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-08 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 49.94,
+      "actual": 0.417,
+      "predicted": 0.393,
+      "naive": 0.428
+    },
+    {
+      "timestamp": "2026-12-08 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 512.98,
+      "actual": 3.761,
+      "predicted": 3.847,
+      "naive": 3.285
+    },
+    {
+      "timestamp": "2026-12-08 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-09 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-09 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-09 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 418.1,
+      "actual": 3.383,
+      "predicted": 3.226,
+      "naive": 2.78
+    },
+    {
+      "timestamp": "2026-12-09 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 583.96,
+      "actual": 4.356,
+      "predicted": 4.371,
+      "naive": 4.317
+    },
+    {
+      "timestamp": "2026-12-09 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-10 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 41.32,
+      "actual": 0.342,
+      "predicted": 0.323,
+      "naive": 0.465
+    },
+    {
+      "timestamp": "2026-12-10 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 360.02,
+      "actual": 2.763,
+      "predicted": 2.766,
+      "naive": 4.356
+    },
+    {
+      "timestamp": "2026-12-10 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 269.04,
+      "actual": 2.021,
+      "predicted": 2.115,
+      "naive": 2.975
+    },
+    {
+      "timestamp": "2026-12-10 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 152.97,
+      "actual": 1.205,
+      "predicted": 1.189,
+      "naive": 1.826
+    },
+    {
+      "timestamp": "2026-12-10 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-10 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-11 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-11 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 373.96,
+      "actual": 2.857,
+      "predicted": 2.842,
+      "naive": 2.021
+    },
+    {
+      "timestamp": "2026-12-11 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 57.93,
+      "actual": 0.464,
+      "predicted": 0.445,
+      "naive": 0.321
+    },
+    {
+      "timestamp": "2026-12-12 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-12 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 584.56,
+      "actual": 4.378,
+      "predicted": 4.379,
+      "naive": 3.941
+    },
+    {
+      "timestamp": "2026-12-12 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-13 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-13 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-13 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-13 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 615.73,
+      "actual": 4.627,
+      "predicted": 4.536,
+      "naive": 3.945
+    },
+    {
+      "timestamp": "2026-12-13 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-14 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-14 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 63.17,
+      "actual": 0.509,
+      "predicted": 0.501,
+      "naive": 0.484
+    },
+    {
+      "timestamp": "2026-12-14 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 437.8,
+      "actual": 3.323,
+      "predicted": 3.316,
+      "naive": 2.392
+    },
+    {
+      "timestamp": "2026-12-15 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-15 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 491.1,
+      "actual": 3.696,
+      "predicted": 3.661,
+      "naive": 5.165
+    },
+    {
+      "timestamp": "2026-12-15 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-16 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-16 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-16 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-16 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-16 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 240.01,
+      "actual": 1.898,
+      "predicted": 1.876,
+      "naive": 1.187
+    },
+    {
+      "timestamp": "2026-12-16 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 400.9,
+      "actual": 3.139,
+      "predicted": 3.081,
+      "naive": 2.221
+    },
+    {
+      "timestamp": "2026-12-16 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 521.78,
+      "actual": 3.871,
+      "predicted": 3.884,
+      "naive": 3.668
+    },
+    {
+      "timestamp": "2026-12-16 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 440.3,
+      "actual": 3.3,
+      "predicted": 3.334,
+      "naive": 3.047
+    },
+    {
+      "timestamp": "2026-12-16 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-16 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-17 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-17 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-17 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-17 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 196.53,
+      "actual": 1.515,
+      "predicted": 1.567,
+      "naive": 1.898
+    },
+    {
+      "timestamp": "2026-12-17 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 51.33,
+      "actual": 0.397,
+      "predicted": 0.406,
+      "naive": 0.368
+    },
+    {
+      "timestamp": "2026-12-17 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-17 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-17 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-18 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-18 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-18 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-18 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 38.64,
+      "actual": 0.31,
+      "predicted": 0.305,
+      "naive": 0.397
+    },
+    {
+      "timestamp": "2026-12-18 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-18 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-19 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-19 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 40.0,
+      "actual": 0.332,
+      "predicted": 0.319,
+      "naive": 0.228
+    },
+    {
+      "timestamp": "2026-12-19 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 354.06,
+      "actual": 2.776,
+      "predicted": 2.737,
+      "naive": 2.338
+    },
+    {
+      "timestamp": "2026-12-19 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 469.18,
+      "actual": 3.516,
+      "predicted": 3.552,
+      "naive": 2.636
+    },
+    {
+      "timestamp": "2026-12-19 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 197.36,
+      "actual": 1.532,
+      "predicted": 1.53,
+      "naive": 1.106
+    },
+    {
+      "timestamp": "2026-12-19 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-19 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-20 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-20 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-20 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 328.38,
+      "actual": 2.629,
+      "predicted": 2.513,
+      "naive": 2.194
+    },
+    {
+      "timestamp": "2026-12-21 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-21 06:00:00",
+      "hour": 6,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-21 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 101.18,
+      "actual": 0.833,
+      "predicted": 0.795,
+      "naive": 1.251
+    },
+    {
+      "timestamp": "2026-12-21 09:00:00",
+      "hour": 9,
+      "irradiance_wm2": 133.24,
+      "actual": 1.069,
+      "predicted": 1.064,
+      "naive": 2.629
+    },
+    {
+      "timestamp": "2026-12-21 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 323.36,
+      "actual": 2.511,
+      "predicted": 2.472,
+      "naive": 2.998
+    },
+    {
+      "timestamp": "2026-12-21 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 358.68,
+      "actual": 2.768,
+      "predicted": 2.753,
+      "naive": 2.659
+    },
+    {
+      "timestamp": "2026-12-21 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-22 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-22 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-22 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-22 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-22 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 266.38,
+      "actual": 2.129,
+      "predicted": 2.113,
+      "naive": 2.768
+    },
+    {
+      "timestamp": "2026-12-22 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 328.39,
+      "actual": 2.491,
+      "predicted": 2.465,
+      "naive": 3.03
+    },
+    {
+      "timestamp": "2026-12-22 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 218.43,
+      "actual": 1.68,
+      "predicted": 1.7,
+      "naive": 2.362
+    },
+    {
+      "timestamp": "2026-12-22 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 158.34,
+      "actual": 1.266,
+      "predicted": 1.237,
+      "naive": 1.346
+    },
+    {
+      "timestamp": "2026-12-22 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 36.27,
+      "actual": 0.283,
+      "predicted": 0.287,
+      "naive": 0.363
+    },
+    {
+      "timestamp": "2026-12-23 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-23 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-23 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 381.22,
+      "actual": 2.877,
+      "predicted": 2.936,
+      "naive": 1.834
+    },
+    {
+      "timestamp": "2026-12-23 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 411.93,
+      "actual": 3.094,
+      "predicted": 3.123,
+      "naive": 1.711
+    },
+    {
+      "timestamp": "2026-12-23 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 370.96,
+      "actual": 2.806,
+      "predicted": 2.835,
+      "naive": 1.453
+    },
+    {
+      "timestamp": "2026-12-24 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-24 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-24 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-24 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 56.17,
+      "actual": 0.456,
+      "predicted": 0.443,
+      "naive": 0.317
+    },
+    {
+      "timestamp": "2026-12-24 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 211.87,
+      "actual": 1.697,
+      "predicted": 1.668,
+      "naive": 1.247
+    },
+    {
+      "timestamp": "2026-12-24 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 616.75,
+      "actual": 4.566,
+      "predicted": 4.527,
+      "naive": 2.927
+    },
+    {
+      "timestamp": "2026-12-24 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 599.51,
+      "actual": 4.364,
+      "predicted": 4.471,
+      "naive": 2.72
+    },
+    {
+      "timestamp": "2026-12-24 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-24 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-25 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-25 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 214.37,
+      "actual": 1.711,
+      "predicted": 1.674,
+      "naive": 1.697
+    },
+    {
+      "timestamp": "2026-12-25 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 494.15,
+      "actual": 3.661,
+      "predicted": 3.762,
+      "naive": 3.661
+    },
+    {
+      "timestamp": "2026-12-25 11:00:00",
+      "hour": 11,
+      "irradiance_wm2": 615.23,
+      "actual": 4.701,
+      "predicted": 4.536,
+      "naive": 3.797
+    },
+    {
+      "timestamp": "2026-12-25 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 545.21,
+      "actual": 3.982,
+      "predicted": 4.068,
+      "naive": 3.914
+    },
+    {
+      "timestamp": "2026-12-25 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 57.17,
+      "actual": 0.464,
+      "predicted": 0.444,
+      "naive": 0.363
+    },
+    {
+      "timestamp": "2026-12-25 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-25 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-25 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-26 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 62.88,
+      "actual": 0.499,
+      "predicted": 0.501,
+      "naive": 0.415
+    },
+    {
+      "timestamp": "2026-12-26 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 689.2,
+      "actual": 5.212,
+      "predicted": 5.017,
+      "naive": 4.549
+    },
+    {
+      "timestamp": "2026-12-26 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 58.56,
+      "actual": 0.454,
+      "predicted": 0.461,
+      "naive": 0.464
+    },
+    {
+      "timestamp": "2026-12-26 20:00:00",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-26 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-27 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-27 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-27 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-27 12:00:00",
+      "hour": 12,
+      "irradiance_wm2": 593.56,
+      "actual": 4.448,
+      "predicted": 4.435,
+      "naive": 5.212
+    },
+    {
+      "timestamp": "2026-12-27 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 352.19,
+      "actual": 2.756,
+      "predicted": 2.73,
+      "naive": 3.24
+    },
+    {
+      "timestamp": "2026-12-27 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 169.18,
+      "actual": 1.374,
+      "predicted": 1.306,
+      "naive": 1.93
+    },
+    {
+      "timestamp": "2026-12-28 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-28 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-28 10:00:00",
+      "hour": 10,
+      "irradiance_wm2": 286.4,
+      "actual": 2.302,
+      "predicted": 2.208,
+      "naive": 3.601
+    },
+    {
+      "timestamp": "2026-12-28 14:00:00",
+      "hour": 14,
+      "irradiance_wm2": 341.78,
+      "actual": 2.641,
+      "predicted": 2.617,
+      "naive": 3.623
+    },
+    {
+      "timestamp": "2026-12-29 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-29 08:00:00",
+      "hour": 8,
+      "irradiance_wm2": 162.17,
+      "actual": 1.339,
+      "predicted": 1.268,
+      "naive": 0.928
+    },
+    {
+      "timestamp": "2026-12-29 16:00:00",
+      "hour": 16,
+      "irradiance_wm2": 196.91,
+      "actual": 1.534,
+      "predicted": 1.521,
+      "naive": 1.115
+    },
+    {
+      "timestamp": "2026-12-29 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-30 01:00:00",
+      "hour": 1,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-30 02:00:00",
+      "hour": 2,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-30 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-30 07:00:00",
+      "hour": 7,
+      "irradiance_wm2": 56.32,
+      "actual": 0.452,
+      "predicted": 0.442,
+      "naive": 0.312
+    },
+    {
+      "timestamp": "2026-12-30 13:00:00",
+      "hour": 13,
+      "irradiance_wm2": 684.3,
+      "actual": 4.967,
+      "predicted": 4.988,
+      "naive": 2.916
+    },
+    {
+      "timestamp": "2026-12-30 15:00:00",
+      "hour": 15,
+      "irradiance_wm2": 438.74,
+      "actual": 3.272,
+      "predicted": 3.338,
+      "naive": 2.784
+    },
+    {
+      "timestamp": "2026-12-30 17:00:00",
+      "hour": 17,
+      "irradiance_wm2": 64.07,
+      "actual": 0.513,
+      "predicted": 0.499,
+      "naive": 0.46
+    },
+    {
+      "timestamp": "2026-12-30 18:00:00",
+      "hour": 18,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 00:00:00",
+      "hour": 0,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 03:00:00",
+      "hour": 3,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 04:00:00",
+      "hour": 4,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 05:00:00",
+      "hour": 5,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 19:00:00",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 21:00:00",
+      "hour": 21,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 22:00:00",
+      "hour": 22,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    },
+    {
+      "timestamp": "2026-12-31 23:00:00",
+      "hour": 23,
+      "irradiance_wm2": 0.0,
+      "actual": 0.0,
+      "predicted": 0.0,
+      "naive": 0.0
+    }
+  ]
+}
