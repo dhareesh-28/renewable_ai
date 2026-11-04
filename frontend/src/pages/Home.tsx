@@ -117,6 +117,18 @@ const Home: React.FC = () => {
   const selfConsumptionPercent = compareData?.strategies?.optimised_lp?.solar_self_consumption_percent ?? 86.6;
   const forecastMae = perfData?.forecast_metrics?.model_metrics?.mae ?? 0.0216;
   const totalFaults = faultsData?.total_events ?? 3;
+  const mae =
+    forecastMae < 0.1
+      ? { value: forecastMae * 1000, decimals: 1, unit: 'W' }
+      : { value: forecastMae, decimals: 2, unit: 'kW' };
+
+  // Horizon label: one date for a day window, a range otherwise
+  const startShort = startDate.slice(0, 10);
+  const endShort = endDate.slice(0, 10);
+  const horizonLabel =
+    startShort === endShort
+      ? `Horizon: ${endShort} (day)`
+      : `Horizon: ${startShort} → ${endShort} (${timeWindow})`;
 
   // Costs for Optimise Deep-Moss Band
   const gridOnlyCost = compareData?.strategies?.grid_only?.total_cost ?? 1511.82;
@@ -245,34 +257,34 @@ const Home: React.FC = () => {
         </div>
       )}
 
-      {/* 2. NUMBERS (Section Curtain Wipe with Asymmetrical Staggered Grid) */}
-      <CurtainSection id="numbers" zIndex={10} wipeDistance={550}>
-        <section className="relative max-w-[1320px] mx-auto px-6 py-28 md:py-40">
-          <div className="pb-8 mb-16 border-b border-hairline">
-            <div className="flex items-center justify-between mb-4">
+      {/* 2. NUMBERS — compact asymmetrical stagger */}
+      <CurtainSection id="numbers" zIndex={10} wipeDistance={280}>
+        <section className="relative max-w-[1320px] mx-auto px-6 pt-16 md:pt-20 pb-20 md:pb-28">
+          <div className="pb-6 mb-12 md:mb-16 border-b border-hairline">
+            <div className="flex items-center justify-between mb-3">
               <Label variant="parenthesised">(01) PERFORMANCE ATTRIBUTION</Label>
               <span className="text-caption text-muted font-sans tabular-nums">
-                Horizon: {startDate.slice(0, 10)} → {endDate.slice(0, 10)} ({timeWindow})
+                {horizonLabel}
               </span>
             </div>
             <MaskedLines
               text="Every kilowatt-hour, *verified.*"
               as="h2"
-              className="text-h2 font-serif font-light text-ink mt-2"
+              className="text-h2 font-serif font-light text-ink"
             />
           </div>
 
           {metaLoading || compLoading || perfLoading || faultsLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-              <Skeleton className="md:col-span-4 h-36" />
-              <Skeleton className="md:col-span-4 md:col-start-8 h-36 mt-16" />
-              <Skeleton className="md:col-span-4 md:col-start-2 h-36 mt-20" />
-              <Skeleton className="md:col-span-4 md:col-start-7 h-36 mt-12" />
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-10">
+              <Skeleton className="md:col-start-1 md:col-span-5 h-36" />
+              <Skeleton className="md:col-start-7 md:col-span-5 h-36 md:mt-20" />
+              <Skeleton className="md:col-start-3 md:col-span-4 h-36" />
+              <Skeleton className="md:col-start-9 md:col-span-4 h-36 md:mt-16" />
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-y-32 gap-x-8">
-              {/* Number 1: Savings vs Grid-Only (%) */}
-              <div className="col-span-12 md:col-span-5 md:pt-0">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-12 md:gap-y-14">
+              {/* Row 1, left: Savings */}
+              <div className="md:col-start-1 md:col-span-5">
                 <MotionNumeral
                   value={savingsPercent}
                   decimals={1}
@@ -284,40 +296,40 @@ const Home: React.FC = () => {
                 />
               </div>
 
-              {/* Number 2: Solar Self-Consumption (%) */}
-              <div className="col-span-12 md:col-span-4 md:col-start-8 md:pt-28">
+              {/* Row 1, right, dropped: Self-consumption */}
+              <div className="md:col-start-7 md:col-span-5 md:mt-20">
                 <MotionNumeral
                   value={selfConsumptionPercent}
                   decimals={1}
                   unit="%"
                   captionLine1="Solar self-consumption"
-                  captionLine2="On-site clean solar energy utilized"
+                  captionLine2="On-site solar energy utilised"
                   staggerIndex={1}
                   size="xl"
                 />
               </div>
 
-              {/* Number 3: Forecast MAE (kW) */}
-              <div className="col-span-12 md:col-span-4 md:col-start-2 md:pt-36">
+              {/* Row 2, left-centre: Forecast error */}
+              <div className="md:col-start-3 md:col-span-4">
                 <MotionNumeral
-                  value={forecastMae}
-                  decimals={4}
-                  unit="kW"
-                  captionLine1="Forecast Mean Absolute Error"
-                  captionLine2="Random Forest test benchmark"
+                  value={mae.value}
+                  decimals={mae.decimals}
+                  unit={mae.unit}
+                  captionLine1="Forecast mean absolute error"
+                  captionLine2="Random Forest, held-out test set"
                   staggerIndex={2}
                   size="xl"
                 />
               </div>
 
-              {/* Number 4: Faults Detected (count with correct pluralization) */}
-              <div className="col-span-12 md:col-span-4 md:col-start-7 md:pt-16">
+              {/* Row 2, right, dropped: Faults */}
+              <div className="md:col-start-9 md:col-span-4 md:mt-16">
                 <MotionNumeral
                   value={totalFaults}
                   decimals={0}
                   unit={totalFaults === 1 ? 'event' : 'events'}
                   captionLine1={totalFaults === 1 ? 'Fault event detected' : 'Fault events detected'}
-                  captionLine2="Isolation Forest & residual hybrid"
+                  captionLine2="Isolation Forest and residual hybrid"
                   staggerIndex={3}
                   size="xl"
                 />

@@ -26,3 +26,4 @@ for url in endpoints:
         dt = (time.time() - t0) * 1000
         name = url.split("8000")[1]
         print(f"{name:<55} -> ERROR in {dt:7.1f} ms: {e}")
+

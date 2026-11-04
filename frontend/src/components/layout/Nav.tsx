@@ -169,10 +169,10 @@ export const Nav: React.FC<NavProps> = ({ isOverHero = false }) => {
             initial="closed"
             animate="open"
             exit="closed"
-            className="fixed inset-0 z-30 bg-bg text-ink flex flex-col justify-between p-8 md:p-16 pt-28 md:pt-32 overflow-y-auto"
+            className="fixed inset-0 z-30 bg-bg text-ink flex flex-col justify-between px-6 md:px-12 pt-20 md:pt-22 pb-4 md:pb-6 overflow-y-auto"
           >
-            <div className="max-w-[1320px] w-full mx-auto">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 pb-4 border-b border-hairline/60 gap-4">
+            <div className="max-w-[1320px] w-full mx-auto my-auto">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3 md:mb-4 pb-2 md:pb-2.5 border-b border-hairline/60 gap-3">
                 <div className="text-[11px] uppercase tracking-label text-muted">
                   Navigation Directory
                 </div>
@@ -200,25 +200,25 @@ export const Nav: React.FC<NavProps> = ({ isOverHero = false }) => {
                       key={item.path}
                       variants={MENU_ITEM_VARIANTS}
                       custom={index}
-                      className="py-6 md:py-8 group"
+                      className="py-2.5 sm:py-3 md:py-3.5 group"
                     >
                       <Link
                         to={item.path}
                         onClick={() => setIsMenuOpen(false)}
                         className="flex items-baseline justify-between w-full"
                       >
-                        <div className="flex items-baseline gap-4 md:gap-8">
-                          <span className="font-serif italic text-muted text-base md:text-xl font-normal group-hover:text-ink transition-colors">
+                        <div className="flex items-baseline gap-4 md:gap-6">
+                          <span className="font-serif italic text-muted text-sm md:text-base font-normal group-hover:text-ink transition-colors">
                             {item.num}
                           </span>
                           <span
-                            className={`font-serif text-3xl md:text-5xl font-light tracking-tight transition-transform duration-300 group-hover:translate-x-2 relative ${
+                            className={`font-serif text-2xl sm:text-3xl md:text-4xl font-light tracking-tight transition-transform duration-300 group-hover:translate-x-2 relative ${
                               isActive ? 'text-ink font-normal' : 'text-ink/80 group-hover:text-ink'
                             }`}
                           >
                             {item.label}
                             {isActive && (
-                              <span className="absolute left-0 -bottom-1.5 w-full h-[1.5px] bg-brass-rule" />
+                              <span className="absolute left-0 -bottom-1 w-full h-[1.5px] bg-brass-rule" />
                             )}
                           </span>
                         </div>
@@ -232,7 +232,7 @@ export const Nav: React.FC<NavProps> = ({ isOverHero = false }) => {
               </div>
             </div>
 
-            <div className="max-w-[1320px] w-full mx-auto pt-12 border-t border-hairline flex flex-col md:flex-row items-start md:items-center justify-between text-caption text-muted gap-4">
+            <div className="max-w-[1320px] w-full mx-auto pt-3 md:pt-4 border-t border-hairline flex flex-col sm:flex-row items-start sm:items-center justify-between text-caption text-muted gap-2">
               <span>{BRAND_NAME} · Renewable Energy Management & Optimisation System</span>
               <div className="flex items-center gap-6">
                 <span>FastAPI + HiGHS + React 18</span>
